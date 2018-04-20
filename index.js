@@ -18,7 +18,6 @@ function setUp(){
     blueImage.style.display = "block";
     purpleImage.style.display = "block";
     document.getElementById('checkeredFlagBlue').style.display = "none";
-    document.getElementById('checkeredFlagPurple').style.display = "none";
     document.getElementById('startButton').style.display = "block";
     document.getElementById('startButtonGo').style.display = "none";
 }
@@ -56,5 +55,5 @@ function blueWins(){
 // Makes the winning image visible & hides race image
 function purpleWins(){
     purpleImage.style.display = "none";
-    document.getElementById('checkeredFlagPurple').style.display = "block";
+    document.getElementById('checkeredFlagBlue').style.display = "block";
 }
