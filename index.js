@@ -33,12 +33,12 @@ function race() {
   var timer = setInterval(frame, 100);
 // Moves the images to the right by a random number between 1 and 20
   function frame (){
-    if (posK > 750 || posP > 750 ){
+    if (posK > 1000 || posP > 1000 ){
       clearInterval(timer);
       posK > posP ? kirbyWins() : poppyWins();
     } else {
-      var rdmK = Math.floor(Math.random() * 20);
-      var rdmP = Math.floor(Math.random() * 20);
+      var rdmK = Math.floor(Math.random() * 40);
+      var rdmP = Math.floor(Math.random() * 40);
       posK += rdmK;
       posP += rdmP;
       kirbyDiv.style.left = posK + 'px';
