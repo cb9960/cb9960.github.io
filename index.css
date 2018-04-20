@@ -13,6 +13,7 @@ body {
 
 #blue {
     position: absolute;
+    bottom: relative;
 }
 
 #blueImg, #purpleImg, #checkeredFlagBlue{
