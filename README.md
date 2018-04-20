@@ -1,4 +1,6 @@
 # cb9960.github.io
+
+## The Great Race
 CIS 370 Final Project Repo
 
 In this project, you will explore some of the topics discussed in class regarding the Browser Object Model, or Document Object Model.  
