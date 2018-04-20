@@ -1,11 +1,11 @@
 // Global variables
 
-var kirbyDiv = document.getElementById('kirby');
-var poppyDiv = document.getElementById('poppy');
+var kirbyDiv = document.getElementById('blue-car-id');
+var poppyDiv = document.getElementById('purple-car-id');
 var posK;
 var posP;
-var kirbyImage = document.getElementById('kirbyImg');
-var poppyImage = document.getElementById('poppyImg');
+var kirbyImage = document.getElementById('checkeredFlagImg');
+var poppyImage = document.getElementById('checkeredFlagImg');
 
 // Resets image sources and position
 function setUp(){
@@ -13,14 +13,14 @@ function setUp(){
     posP = 0;
     kirbyDiv.style.left = posK + 'px';
     poppyDiv.style.left = posP + 'px';
-    kirbyImage.src = "kirby_bomb.png";
-    poppyImage.src = "poppy_bomb.png";
+    kirbyImage.src = "blue-car-md.png";
+    poppyImage.src = "purple-car-md.png";
     kirbyImage.style.display = "block";
     poppyImage.style.display = "block";
     document.getElementById('kirbyWinsImg').style.display = "none";
     document.getElementById('poppyWinsImg').style.display = "none";
     document.getElementById('startButton').style.display = "block";
-    document.getElementById('startButtonBW').style.display = "none";
+    document.getElementById('startButtonGo').style.display = "none";
 }
 
 // Conduct "the race"
