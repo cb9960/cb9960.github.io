@@ -1,33 +1,60 @@
-var timer= null;
-//(function(){
-//    new Vue({
-//        el: '#button1'
-//        })
-//})
+// Global variables
 
-function move()
-{
-    document.getElementByID('racer1').style.right =
-    parseInt(document.getElementById('racer1').style.right) + 1000 + 'px';
-    document.getElementByID('racer2').style.right =
-    parseInt(document.getElementById('racer2').style.right) + 1000 + 'px';
+var kirbyDiv = document.getElementById('kirby');
+var poppyDiv = document.getElementById('poppy');
+var posK;
+var posP;
+var kirbyImage = document.getElementById('kirbyImg');
+var poppyImage = document.getElementById('poppyImg');
+
+// Resets image sources and position
+function setUp(){
+    posK = 0;
+    posP = 0;
+    kirbyDiv.style.left = posK + 'px';
+    poppyDiv.style.left = posP + 'px';
+    kirbyImage.src = "kirby_bomb.png";
+    poppyImage.src = "poppy_bomb.png";
+    kirbyImage.style.display = "block";
+    poppyImage.style.display = "block";
+    document.getElementById('kirbyWinsImg').style.display = "none";
+    document.getElementById('poppyWinsImg').style.display = "none";
+    document.getElementById('startButton').style.display = "block";
+    document.getElementById('startButtonBW').style.display = "none";
 }
-window.onload = function()
-{
-    document.getElementById('button1').onclick=function()
-    {
-        if(timer == null){
-            timer = setInterval("move()", 10);
-        }
-        else{
+
+// Conduct "the race"
+function race() {
+    setUp();
+    document.getElementById('startButton').style.display = "none";
+    document.getElementById('startButtonBW').style.display = "block";
+    // The frame() function occurs at interval
+    var timer = setInterval(frame, 100);
+    // Moves the images to the right by a random number between 1 and 20
+    function frame (){
+        if (posK > 500 || posP > 500 ){
             clearInterval(timer);
-            timer = null
+            posK > posP ? kirbyWins() : poppyWins();
+        } else {
+            var rdmK = Math.floor(Math.random() * 20);
+            var rdmP = Math.floor(Math.random() * 20);
+            posK += rdmK;
+            posP += rdmP;
+            kirbyDiv.style.left = posK + 'px';
+            poppyDiv.style.left = posP + 'px';
+            
         }
     }
-    var button2 = document.getElementById('button2');
-    button2.onclick= reloadPage;
+}
+
+// Makes the winning image visible & hides race image
+function kirbyWins(){
+    kirbyImage.style.display = "none";
+    document.getElementById('kirbyWinsImg').style.display = "block";
     
-    function reload(){
-        window.location.reload();
-    }
+}
+// Makes the winning image visible & hides race image
+function poppyWins(){
+    poppyImage.style.display = "none";
+    document.getElementById('poppyWinsImg').style.display = "block";
 }

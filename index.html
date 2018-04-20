@@ -1,49 +1,40 @@
 <!DOCTYPE html>
+
+<!--
+ The Great Race
+ CIS 340
+ Christian Bodine
+ index.html
+ -->
+
 <html lang="en">
     <head>
-        <meta charset="UTF-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-                <meta http-equiv="X-UA-Compatible" content="ie=edge">
-                    <title>The Great Race!</title>
-                    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css">
-                        <style type="text/css">
-                            </style>
-    </head>
-    <body>
-        <div class="container" id"race">
-            <form>
-                <div class="container-fluid">
-                    <div style="position: fixed; left: 0px; top: 0px; bottom: 0px">
-                        <img src="images/lothriccastle.jpg" alt="Lothric Castle">
+        <meta charset="utf-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+                <meta name="viewport" content="width=device-width, initial-scale=1">
+                    <title>The Great Race</title>
+                    
+                    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+                        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+                            
+                            <link rel="stylesheet" href="index.css">
+                                
+                                </head>
+    <body onload="setUp()">
+        <input type="image" src="kirby-logo.png" id="startButton" onclick="race()">
+            <input type="image" src="kirby-logo.png" id="startButtonBW">
+                <div id="kirby">
+                    <img src="kirby_bomb.png" alt="Kirby" id="kirbyImg">
+                        <img src="kirby_wins.png" alt="Kirby Wins" id="kirbyWinsImg" onclick="setUp()">
                             </div>
-                </div>
-                <div class="start" id="button1">
-                    <div style="position: absolute; left: 230px; top: 80px;">
-                        <button type="submit" class="btn-btn-start">
-                            <img src="images/skullbutton.png" alt="Skull Button">
-                                </button>
-                    </div>
-                </div>
-                <div class="reset" id="button2">
-                    <div style="position: absolute; left: 420px; top: 80px;">
-                        <button type="reset" class="btn-btn-reset">
-                            <img src="images/resetbutton.png" alt="Reset Button">
-                                </button>
-                    </div>
-                </div>
-                <div class="stalfos1" id="racer1">
-                    <div style="position: absolute; right: 50px; bottom: 5px;">
-                        <img src="images/runningstalfos.png" alt="Standing Stalfos" height="256" width="256">
+                <div id="poppy">
+                    <img src="poppy_bomb.png" alt="Poppy" id="poppyImg">
+                        <img src="poppy_wins.png" alt="Poppy Wins" id="poppyWinsImg" onclick="setUp()">
                             </div>
-                </div>
-                <div class="stalfos2" id="racer2">
-                    <div style="position: absolute; right: 50px; bottom: 5px;">
-                        <img src="images/standingstalfos.png" alt="Standing Stalfos" height="256" width="256">
-                            </div>
-                </div>
-            </form>
-        </div>
-        <script>href="https://unpkg.com/vue@2.5.2/dist/vue.js"</script>
-        <script>index.js</script>
-    </body>
+                
+                
+                <script src="index.js"></script>
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+                <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+                </body>
 </html>
