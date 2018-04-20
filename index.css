@@ -8,8 +8,8 @@
 
 body {
   background-image: url("horizontal_highway.jpg");
-  width: 10 px;
-  height: 10 px;
+  width: auto;
+  height: auto;
 }
 
 #blue car, #purple car {
