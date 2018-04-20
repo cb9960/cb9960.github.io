@@ -1,40 +1,41 @@
 <!DOCTYPE html>
 
 <!--
- The Great Race
- CIS 340
- Christian Bodine
- index.html
- -->
+The Great Race
+CIS 131 - W01
+
+James McAdoo
+index.html
+-->
 
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-            <meta http-equiv="X-UA-Compatible" content="IE=edge">
-                <meta name="viewport" content="width=device-width, initial-scale=1">
-                    <title>The Great Race</title>
-                    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-                        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-                    
-                    <link rel="stylesheet" href="index.css">
-                        
-                                
-                                </head>
-    <body onload="setUp()">
-        <input type="image" src="traffic_light_red.png" id="startButton" onclick="race()">
-        <input type="image" src="traffic-light-green.png" id="startButtonGo">
-            <div id="blue">
-            <img src="blue-car-md.png" alt="Blue" id="blueImg">
-            <img src="Checkered_Flag.png" alt="blue-car-wins" id="checkeredFlagBlue" onclick="setUp()">
-            </div>
-            <div id="purple">
-            <img src="purple-car-md.png" alt="Purple" id="purpleImg">
-                
-            </div>
-                
-                
-                <script src="index.js"></script>
-                <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-                <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-                </body>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>The Great Race</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="index.css">
+
+  </head>
+  <body onload="setUp()">
+    <input type="image" src="kirby-logo.png" id="startButton" onclick="race()">
+    <input type="image" src="kirby-logo.png" id="startButtonBW">
+    <div id="kirby">
+      <img src="kirby_bomb.png" alt="Kirby" id="kirbyImg">
+      <img src="kirby_wins.png" alt="Kirby Wins" id="kirbyWinsImg" onclick="setUp()">
+    </div>
+    <div id="poppy">
+      <img src="poppy_bomb.png" alt="Poppy" id="poppyImg">
+      <img src="poppy_wins.png" alt="Poppy Wins" id="poppyWinsImg" onclick="setUp()">
+    </div>
+
+
+    <script src="index.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  </body>
 </html>

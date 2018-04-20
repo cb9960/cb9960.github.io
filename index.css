@@ -1,35 +1,37 @@
 /*
 
     The Great Race
-    CIS 340
-    Christian Bodine
+    CIS 131 - W01
+
+    James McAdoo
     index.css
 */
 
 body {
-    background-image: url("background.jpg");
+  background-image: url("background.jpg");
 }
 
-#blue {
-    position: absolute;
+#kirby {
+  position: absolute;
 }
 
-#blueImg, #purpleImg, #checkeredFlagBlue{
-    width: 200px;
-    height: auto;
+#kirbyImg, #poppyImg, #kirbyWinsImg{
+  width: 200px;
+  height: auto;
 }
-#checkeredFlagPurple{
-    width: 300px;
-    height: auto;
+#poppyWinsImg{
+  width: 300px;
+  height: auto;
 }
 
-#purple {
-    position: absolute;
-    top: 400px;
+#poppy {
+  position: absolute;
+  top: 400px;
 }
 #startButton{
-    margin: 25px;
+  margin: 25px;
 }
-#startButtonGo{
-    margin: 25px;;
+#startButtonBW{
+  margin: 25px;
+  filter: grayscale(100%);
 }
