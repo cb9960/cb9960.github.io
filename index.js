@@ -1,7 +1,7 @@
 // Global variables
 
-var blueDiv = document.getElementById('blue-car-id');
-var purpleDiv = document.getElementById('purple-car-id');
+var blueDiv = document.getElementById('blue');
+var purpleDiv = document.getElementById('purple');
 var posB;
 var posP;
 var blueImage = document.getElementById('checkeredFlagImg');
@@ -50,11 +50,11 @@ function race() {
 // Makes the winning image visible & hides race image
 function blueWins(){
     blueImage.style.display = "none";
-    document.getElementById('checkeredFlagImg').style.display = "block";
+    document.getElementById('checkeredFlagBlue').style.display = "block";
     
 }
 // Makes the winning image visible & hides race image
 function purpleWins(){
     purpleImage.style.display = "none";
-    document.getElementById('checkeredFlagImg').style.display = "block";
+    document.getElementById('checkeredFlagPurple').style.display = "block";
 }
