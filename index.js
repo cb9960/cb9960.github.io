@@ -50,11 +50,11 @@ function race() {
 // Makes the winning image visible & hides race image
 function kirbyWins(){
     kirbyImage.style.display = "none";
-    document.getElementById('kirbyWinsImg').style.display = "block";
+    document.getElementById('checkeredFladImg').style.display = "block";
     
 }
 // Makes the winning image visible & hides race image
 function poppyWins(){
     poppyImage.style.display = "none";
-    document.getElementById('poppyWinsImg').style.display = "block";
+    document.getElementById('checkeredFlagImg').style.display = "block";
 }
