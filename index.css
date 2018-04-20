@@ -8,12 +8,10 @@
 
 body {
     background-image: url("background.jpg");
-    background-repeat: no-repeat;
 }
 
 #blue {
     position: absolute;
-    bottom: relative;
 }
 
 #blueImg, #purpleImg, #checkeredFlagBlue{
