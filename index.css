@@ -14,23 +14,22 @@ body {
     position: absolute;
 }
 
-#kirbyImg, #poppyImg, #kirbyWinsImg{
+#blueImg, #purpleImg, #checkeredFlagBlue{
     width: 200px;
     height: auto;
 }
-#poppyWinsImg{
+#checkeredFlagPurple{
     width: 300px;
     height: auto;
 }
 
-#poppy {
+#purple {
     position: absolute;
     top: 400px;
 }
 #startButton{
     margin: 25px;
 }
-#startButtonBW{
-    margin: 25px;
-    filter: grayscale(100%);
+#startButtonGo{
+    margin: 25px;;
 }
