@@ -8,30 +8,24 @@
 
 body {
   background-image: url("horizontal_highway.jpg");
+  width: 10 px;
+  height: 10 px;
+}
+
+#blue car, #purple car {
   width: auto;
   height: auto;
 }
 
-#kirby {
-  position: absolute;
+# checkered flag {
+    width: 10px;
+    height: 10 px;
 }
 
-#kirbyImg, #poppyImg, #kirbyWinsImg{
-  width: auto;
-  height: auto;
-}
-#poppyWinsImg{
-  width: auto;
-  height: auto;
-}
-
-#poppy {
-  position: absolute;
-  top: auto;
-}
 #startButton{
   margin: 25px;
 }
+
 #startButtonGo{
   margin: 25px;
 }
