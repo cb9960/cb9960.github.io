@@ -33,7 +33,7 @@ function race() {
   var timer = setInterval(frame, 100);
 // Moves the images to the right by a random number between 1 and 20
   function frame (){
-    if (posK > 500 || posP > 500 ){
+    if (posK > 750 || posP > 750 ){
       clearInterval(timer);
       posK > posP ? kirbyWins() : poppyWins();
     } else {
