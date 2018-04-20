@@ -8,6 +8,8 @@
 
 body {
   background-image: url("horizontal_highway.jpg");
+  width: auto;
+  height: auto;
 }
 
 #kirby {
