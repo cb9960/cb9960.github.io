@@ -30,7 +30,4 @@ body {
 #startButton{
   margin: 25px;
 }
-#startButtonBW{
-  margin: 25px;
-  filter: grayscale(100%);
-}
+
