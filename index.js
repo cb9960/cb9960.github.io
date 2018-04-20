@@ -1,24 +1,24 @@
 // Global variables
 
-var kirbyDiv = document.getElementById('blue-car-id');
-var poppyDiv = document.getElementById('purple-car-id');
-var posK;
+var blueDiv = document.getElementById('blue-car-id');
+var purpleDiv = document.getElementById('purple-car-id');
+var posB;
 var posP;
-var kirbyImage = document.getElementById('checkeredFlagImg');
-var poppyImage = document.getElementById('checkeredFlagImg');
+var blueImage = document.getElementById('checkeredFlagImg');
+var purpleImage = document.getElementById('checkeredFlagImg');
 
 // Resets image sources and position
 function setUp(){
-    posK = 0;
+    posB = 0;
     posP = 0;
-    kirbyDiv.style.left = posK + 'px';
-    poppyDiv.style.left = posP + 'px';
-    kirbyImage.src = "blue-car-md.png";
-    poppyImage.src = "purple-car-md.png";
-    kirbyImage.style.display = "block";
-    poppyImage.style.display = "block";
-    document.getElementById('kirbyWinsImg').style.display = "none";
-    document.getElementById('poppyWinsImg').style.display = "none";
+    blueDiv.style.left = posB + 'px';
+    purpleDiv.style.left = posP + 'px';
+    blueImage.src = "blue-car-md.png";
+    purpleImage.src = "purple-car-md.png";
+    blueImage.style.display = "block";
+    purpleImage.style.display = "block";
+    document.getElementById('checkeredFlagBlue').style.display = "none";
+    document.getElementById('checkeredFlagPurple').style.display = "none";
     document.getElementById('startButton').style.display = "block";
     document.getElementById('startButtonGo').style.display = "none";
 }
@@ -27,34 +27,34 @@ function setUp(){
 function race() {
     setUp();
     document.getElementById('startButton').style.display = "none";
-    document.getElementById('startButtonBW').style.display = "block";
+    document.getElementById('startButtonGo').style.display = "block";
     // The frame() function occurs at interval
     var timer = setInterval(frame, 100);
     // Moves the images to the right by a random number between 1 and 20
     function frame (){
-        if (posK > 500 || posP > 500 ){
+        if (posB > 500 || posP > 500 ){
             clearInterval(timer);
-            posK > posP ? kirbyWins() : poppyWins();
+            posB > posP ? blueWins() : purpleWins();
         } else {
-            var rdmK = Math.floor(Math.random() * 20);
+            var rdmB = Math.floor(Math.random() * 20);
             var rdmP = Math.floor(Math.random() * 20);
-            posK += rdmK;
+            posB += rdmB;
             posP += rdmP;
-            kirbyDiv.style.left = posK + 'px';
-            poppyDiv.style.left = posP + 'px';
+            blueDiv.style.left = posB + 'px';
+            purpleDiv.style.left = posP + 'px';
             
         }
     }
 }
 
 // Makes the winning image visible & hides race image
-function kirbyWins(){
-    kirbyImage.style.display = "none";
-    document.getElementById('checkeredFladImg').style.display = "block";
+function blueWins(){
+    blueImage.style.display = "none";
+    document.getElementById('checkeredFlagImg').style.display = "block";
     
 }
 // Makes the winning image visible & hides race image
-function poppyWins(){
-    poppyImage.style.display = "none";
+function purpleWins(){
+    purpleImage.style.display = "none";
     document.getElementById('checkeredFlagImg').style.display = "block";
 }
