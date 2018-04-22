@@ -26,7 +26,6 @@ function setUp(){
 
 // Conduct "the race"
 function race() {
-  setUp();
   document.getElementById('startButton').style.display = "none";
   document.getElementById('startButtonBW').style.display = "block";
 // The frame() function occurs at interval
