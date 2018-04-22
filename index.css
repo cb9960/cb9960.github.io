@@ -14,14 +14,11 @@ body {
   top: 300px;
 }
 
-#blueImg, #greenImg, #kirbyWinsImg{
+#blueImg, #greenImg, #flag{
   width: 200px;
   height: auto;
 }
-#poppyWinsImg{
-  width: 300px;
-  height: auto;
-}
+
 
 #green {
   position: absolute;
