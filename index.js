@@ -52,7 +52,6 @@ function race() {
 function blueWins(){
   greenImage.style.display = "block";
   document.getElementById('blueWinsImg').style.display = "block";
-    document.getElementById('green_car').style.display = "none";
     window.alert("Blue wins!");
 
 }
@@ -60,6 +59,5 @@ function blueWins(){
 function greenWins(){
   blueImage.style.display = "block";
   document.getElementById('greenWinsImg').style.display = "block";
-    document.getElementById('blue_car').style.display = "none";
     window.alert("Green wins!");
 }
