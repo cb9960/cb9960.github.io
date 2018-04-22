@@ -28,8 +28,8 @@ body {
 }
 #startButton{
   margin: 25px;
-  width: 25 px;
-  height: 25 px;
+  max-width: 50%;
+  max-height: 50%;
 }
 #startButtonBW{
   margin: 25px;
