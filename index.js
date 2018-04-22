@@ -29,7 +29,7 @@ function race() {
   setUp();
   document.getElementById('startButton').style.display = "none";
   document.getElementById('startButtonBW').style.display = "block";
-  // The frame() function occurs at interval
+// The frame() function occurs at interval
   var timer = setInterval(frame, 100);
 // Moves the images to the right by a random number between 1 and 40
   function frame (){
