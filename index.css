@@ -11,7 +11,6 @@ body {
 
 #blue {
   position: absolute;
-  top: 600px;
 }
 
 #blueImg, #greenImg {
@@ -26,7 +25,6 @@ body {
 
 #green {
   position: absolute;
-  top: 800px;
 }
 
 #startButton {
