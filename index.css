@@ -9,12 +9,12 @@ body {
   background-image: url("cartoon_road.png");
 }
 
-#kirby {
+#blue {
   position: absolute;
   top: 300px;
 }
 
-#kirbyImg, #poppyImg, #kirbyWinsImg{
+#blueImg, #greenImg, #kirbyWinsImg{
   width: 200px;
   height: auto;
 }
@@ -23,7 +23,7 @@ body {
   height: auto;
 }
 
-#poppy {
+#green {
   position: absolute;
   top: 400px;
 }
