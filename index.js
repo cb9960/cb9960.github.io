@@ -50,14 +50,16 @@ function race() {
 
 // Makes the winning image visible & hides race image
 function blueWins(){
-  greenImage.style.display = "none";
+  greenImage.style.display = "block";
   document.getElementById('blueWinsImg').style.display = "block";
+    document.getElementById('green_car').style.display = "none";
     window.alert("Blue wins!");
 
 }
 // Makes the winning image visible & hides race image
 function greenWins(){
-  blueImage.style.display = "none";
+  blueImage.style.display = "block";
   document.getElementById('greenWinsImg').style.display = "block";
+    document.getElementById('blue_car').style.display = "none";
     window.alert("Green wins!");
 }
