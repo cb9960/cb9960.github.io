@@ -27,9 +27,8 @@ body {
   top: 400px;
 }
 #startButton{
-  margin: 25px;
-  max-width: 50%;
-  max-height: 50%;
+  margin: 10px;
+  
 }
 #startButtonBW{
   margin: 25px;
