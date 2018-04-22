@@ -28,6 +28,8 @@ body {
 }
 #startButton{
   margin: 25px;
+  width: 25 px;
+  height: 25 px;
 }
 #startButtonBW{
   margin: 25px;
