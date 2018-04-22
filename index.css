@@ -28,9 +28,11 @@ body {
   position: absolute;
   top: 400px;
 }
-#startButton{
+
+#startButton {
     max-height: 150px;
 }
-#startButtonBW{
+
+#startButtonBW {
     max-height: 150px;
 }
