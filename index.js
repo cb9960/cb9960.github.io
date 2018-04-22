@@ -26,6 +26,7 @@ function setUp(){
 
 // Conduct "the race"
 function race() {
+    setUp();
   document.getElementById('startButton').style.display = "none";
   document.getElementById('startButtonBW').style.display = "block";
 // The frame() function occurs at interval
@@ -52,11 +53,12 @@ function blueWins(){
   greenImage.style.display = "block";
   document.getElementById('blueWinsImg').style.display = "block";
     window.alert("Blue wins!");
-
+    window.alert("Click on the flag to restart.")
 }
 // Makes the winning image visible & hides race image
 function greenWins(){
   blueImage.style.display = "block";
   document.getElementById('greenWinsImg').style.display = "block";
     window.alert("Green wins!");
+    window.alert("Click on the flag to restart.")
 }
