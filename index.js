@@ -1,8 +1,8 @@
 
 // Global variables
 
-var blueDiv = document.getElementById('blue-car');
-var greenDiv = document.getElementById('green-car');
+var blueDiv = document.getElementById('blue');
+var greenDiv = document.getElementById('green');
 var posB;
 var posG;
 var blueImage = document.getElementById('blueImg');
