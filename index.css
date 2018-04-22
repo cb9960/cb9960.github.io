@@ -11,6 +11,7 @@ body {
 
 #kirby {
   position: absolute;
+  top: 300px;
 }
 
 #kirbyImg, #poppyImg, #kirbyWinsImg{
