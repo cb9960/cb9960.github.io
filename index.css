@@ -19,8 +19,8 @@ body {
 }
 
 #greenWinsImg, #blueWinsImg {
-    max-width: 150px;
-    max-height: 150px;
+    max-width: 400px;
+    max-height: 400px;
     margin-left: auto;
     margin-right: auto;
 
