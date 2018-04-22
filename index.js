@@ -1,12 +1,12 @@
 
 // Global variables
 
-var kirbyDiv = document.getElementById('kirby');
-var poppyDiv = document.getElementById('poppy');
+var kirbyDiv = document.getElementById('blue-car');
+var poppyDiv = document.getElementById('green-car');
 var posK;
 var posP;
-var kirbyImage = document.getElementById('kirbyImg');
-var poppyImage = document.getElementById('poppyImg');
+var kirbyImage = document.getElementById('blueImg');
+var poppyImage = document.getElementById('greenImg');
 
 // Resets image sources and position
 function setUp(){
@@ -14,8 +14,8 @@ function setUp(){
   posP = 0;
   kirbyDiv.style.left = posK + 'px';
   poppyDiv.style.left = posP + 'px';
-  kirbyImage.src = "kirby_bomb.png";
-  poppyImage.src = "poppy_bomb.png";
+  kirbyImage.src = "blue_car.png";
+  poppyImage.src = "green_car.png";
   kirbyImage.style.display = "block";
   poppyImage.style.display = "block";
   document.getElementById('kirbyWinsImg').style.display = "none";
