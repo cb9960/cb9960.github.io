@@ -52,12 +52,12 @@ function race() {
 function blueWins(){
   kirbyImage.style.display = "none";
   document.getElementById('kirbyWinsImg').style.display = "block";
-    window.alert("Kirby wins!");
+    window.alert("Blue wins!");
 
 }
 // Makes the winning image visible & hides race image
 function greenWins(){
   poppyImage.style.display = "none";
   document.getElementById('poppyWinsImg').style.display = "block";
-    window.alert("Poppy wins!");
+    window.alert("Green wins!");
 }
