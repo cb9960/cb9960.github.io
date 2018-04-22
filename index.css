@@ -27,10 +27,10 @@ body {
   top: 400px;
 }
 #startButton{
-    width: 25px;
-    height: 25px;
+    max-width: 25px;
+    max-height: 25px;
 }
 #startButtonBW{
-    width: 25px;
-    height: 25px;
+    max-width: 25px;
+    max-height: 25px;
 }
