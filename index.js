@@ -18,8 +18,8 @@ function setUp(){
   greenImage.src = "green_car.png";
   blueImage.style.display = "block";
   greenImage.style.display = "block";
-  document.getElementById('kirbyWinsImg').style.display = "none";
-  document.getElementById('poppyWinsImg').style.display = "none";
+  document.getElementById('blueWinsImg').style.display = "none";
+  document.getElementById('greenWinsImg').style.display = "none";
   document.getElementById('startButton').style.display = "block";
   document.getElementById('startButtonBW').style.display = "none";
 }
@@ -51,13 +51,13 @@ function race() {
 // Makes the winning image visible & hides race image
 function blueWins(){
   blueImage.style.display = "none";
-  document.getElementById('kirbyWinsImg').style.display = "block";
+  document.getElementById('blueWinsImg').style.display = "block";
     window.alert("Blue wins!");
 
 }
 // Makes the winning image visible & hides race image
 function greenWins(){
   greenImage.style.display = "none";
-  document.getElementById('poppyWinsImg').style.display = "block";
+  document.getElementById('greenWinsImg').style.display = "block";
     window.alert("Green wins!");
 }
