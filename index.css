@@ -14,11 +14,15 @@ body {
   top: 300px;
 }
 
-#blueImg, #greenImg, #flag{
+#blueImg, #greenImg {
   width: 200px;
   height: auto;
 }
 
+#flag {
+    max-width: 150px;
+    max-height: 150px;
+}
 
 #green {
   position: absolute;
