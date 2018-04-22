@@ -1,23 +1,23 @@
 
 // Global variables
 
-var kirbyDiv = document.getElementById('blue-car');
-var poppyDiv = document.getElementById('green-car');
-var posK;
-var posP;
-var kirbyImage = document.getElementById('blueImg');
-var poppyImage = document.getElementById('greenImg');
+var blueDiv = document.getElementById('blue-car');
+var greenDiv = document.getElementById('green-car');
+var posB;
+var posG;
+var blueImage = document.getElementById('blueImg');
+var greenImage = document.getElementById('greenImg');
 
 // Resets image sources and position
 function setUp(){
-  posK = 0;
-  posP = 0;
-  kirbyDiv.style.left = posK + 'px';
-  poppyDiv.style.left = posP + 'px';
-  kirbyImage.src = "blue_car.png";
-  poppyImage.src = "green_car.png";
-  kirbyImage.style.display = "block";
-  poppyImage.style.display = "block";
+  posB = 0;
+  posG = 0;
+  blueDiv.style.left = posB + 'px';
+  greenDiv.style.left = posG + 'px';
+  blueImage.src = "blue_car.png";
+  greenImage.src = "green_car.png";
+  blueImage.style.display = "block";
+  greenImage.style.display = "block";
   document.getElementById('kirbyWinsImg').style.display = "none";
   document.getElementById('poppyWinsImg').style.display = "none";
   document.getElementById('startButton').style.display = "block";
@@ -33,30 +33,30 @@ function race() {
   var timer = setInterval(frame, 100);
 // Moves the images to the right by a random number between 1 and 20
   function frame (){
-    if (posK > 1000 || posP > 1000 ){
+    if (posB > 1000 || posG > 1000 ){
       clearInterval(timer);
-      posK > posP ? kirbyWins() : poppyWins();
+      posB > posG ? blueWins() : greenWins();
     } else {
-      var rdmK = Math.floor(Math.random() * 40);
-      var rdmP = Math.floor(Math.random() * 40);
-      posK += rdmK;
-      posP += rdmP;
-      kirbyDiv.style.left = posK + 'px';
-      poppyDiv.style.left = posP + 'px';
+      var rdmB = Math.floor(Math.random() * 40);
+      var rdmG = Math.floor(Math.random() * 40);
+      posB += rdmB;
+      posG += rdmG;
+      blueDiv.style.left = posB + 'px';
+      greenDiv.style.left = posG + 'px';
 
     }
   }
 }
 
 // Makes the winning image visible & hides race image
-function kirbyWins(){
+function blueWins(){
   kirbyImage.style.display = "none";
   document.getElementById('kirbyWinsImg').style.display = "block";
     window.alert("Kirby wins!");
 
 }
 // Makes the winning image visible & hides race image
-function poppyWins(){
+function greenWins(){
   poppyImage.style.display = "none";
   document.getElementById('poppyWinsImg').style.display = "block";
     window.alert("Poppy wins!");
