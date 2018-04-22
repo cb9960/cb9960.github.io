@@ -52,13 +52,11 @@ function race() {
 function blueWins(){
   greenImage.style.display = "block";
   document.getElementById('blueWinsImg').style.display = "block";
-    window.alert("Blue wins!");
-    window.alert("Click on the flag to restart.")
+    window.alert("Blue wins! Click on the flag to restart.");
 }
 // Makes the winning image visible & hides race image
 function greenWins(){
   blueImage.style.display = "block";
   document.getElementById('greenWinsImg').style.display = "block";
-    window.alert("Green wins!");
-    window.alert("Click on the flag to restart.")
+    window.alert("Green wins! Click on the flag to restart.");
 }
