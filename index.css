@@ -29,7 +29,13 @@ body {
   position: absolute;
 }
 
-#startButton, #startButtonTwo {
+#startButton {
+    max-height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#startButtonBW {
     max-height: 300px;
     margin-left: auto;
     margin-right: auto;
