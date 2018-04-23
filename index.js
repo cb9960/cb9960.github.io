@@ -37,10 +37,10 @@ function race() {
       clearInterval(timer);
       posB > posG ? blueWins() : greenWins();
     } else {
-      var rdmB = Math.floor(Math.random() * 40);
-      var rdmG = Math.floor(Math.random() * 40);
-      posB += rdmB;
-      posG += rdmG;
+      var randomB = Math.floor(Math.random() * 40);
+      var randomG = Math.floor(Math.random() * 40);
+      posB += randomB;
+      posG += randomG;
       blueDiv.style.left = posB + 'px';
       greenDiv.style.left = posG + 'px';
 
