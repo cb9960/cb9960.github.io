@@ -21,14 +21,14 @@ function setUp(){
   document.getElementById('blueWinsImg').style.display = "none";
   document.getElementById('greenWinsImg').style.display = "none";
   document.getElementById('startButton').style.display = "block";
-  document.getElementById('startButtonBW').style.display = "none";
+  document.getElementById('startButtonTwo').style.display = "none";
 }
 
 // Conduct "the race"
 function race() {
     setUp();
   document.getElementById('startButton').style.display = "none";
-  document.getElementById('startButtonBW').style.display = "block";
+  document.getElementById('startButtonTwo').style.display = "block";
 // The frame() function occurs at interval
   var timer = setInterval(frame, 100);
 // Moves the images to the right by a random number between 1 and 40
