@@ -32,7 +32,7 @@ function race() {
 // The frame() function occurs at interval
   var timer = setInterval(frame, 100);
 // Moves the images to the right by a random number between 1 and 40
-  function frame (){
+  function frame() {
     if (posB > 1000 || posG > 1000 ){
       clearInterval(timer);
       posB > posG ? blueWins() : greenWins();
