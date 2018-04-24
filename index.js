@@ -31,14 +31,14 @@ function race() {
   document.getElementById('startButtonTwo').style.display = "block";
 // The frame() function occurs at interval
   var timer = setInterval(frame, 100);
-// Moves the images to the right by a random number between 1 and 50
+// Moves the images to the right by a random number between 1 and 40
   function frame() {
-    if (posB > 1000 || posG > 1000 ){
+    if (posB > 1200 || posG > 1200 ){
       clearInterval(timer);
       posB > posG ? blueWins() : greenWins();
     } else {
-      var randomB = Math.floor(Math.random() * 50);
-      var randomG = Math.floor(Math.random() * 50);
+      var randomB = Math.floor(Math.random() * 40);
+      var randomG = Math.floor(Math.random() * 40);
       posB += randomB;
       posG += randomG;
       blueDiv.style.left = posB + 'px';
