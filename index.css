@@ -26,6 +26,7 @@ body {
 
 #green_car {
   position: absolute;
+  bottom: 50px;
 }
 
 #startButton, #startButtonTwo {
