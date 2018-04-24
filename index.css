@@ -21,7 +21,13 @@ body {
     width: 500px;
 }
 
-#blueWinsImg {
+#flag {
+    max-width: 500px;
+    max-height: 500px;
+    margin-left: auto;
+    margin-right:auto;
+}
+/**#blueWinsImg {
     position: relative;
     max-width: 500px;
     max-height: 500px;
@@ -36,6 +42,7 @@ body {
     left: 500px;
     top: -350px;    
 }
+ */
 
 #green_car {
   position: absolute;
