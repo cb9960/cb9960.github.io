@@ -18,10 +18,8 @@ function setUp(){
   greenImage.src = "green_car.png";
   blueImage.style.display = "block";
   greenImage.style.display = "block";
-  /**document.getElementById('blueWinsImg').style.display = "none";
+  document.getElementById('blueWinsImg').style.display = "none";
   document.getElementById('greenWinsImg').style.display = "none";
-   */
-    document.getElementById('flag').style.display = "none";
   document.getElementById('startButton').style.display = "block";
   document.getElementById('startButtonTwo').style.display = "none";
 }
