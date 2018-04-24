@@ -9,7 +9,7 @@ body {
   background-image: url("cartoon_road.png");
 }
 
-#blue {
+#blue_car {
   position: absolute;
 }
 
@@ -25,7 +25,7 @@ body {
     margin-right: auto;
 }
 
-#green {
+#green_car {
   position: absolute;
 }
 
