@@ -13,13 +13,8 @@ body {
   position: absolute;
 }
 
-#blueImg {
+#blueImg, #greenImg {
   width: 200px;
-}
-
-#greenImg {
-    width: 200px;
-    
 }
 
 #greenWinsImg, #blueWinsImg {
