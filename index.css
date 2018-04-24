@@ -13,9 +13,15 @@ body {
   position: absolute;
 }
 
-#blueImg, #greenImg {
+#blueImg {
   width: 200px;
   height: auto;
+  top: 200px;
+}
+
+#greenImg {
+    width: 200px;
+    top: 300px;
 }
 
 #greenWinsImg, #blueWinsImg {
