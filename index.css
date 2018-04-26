@@ -1,20 +1,20 @@
 /*
-    The Great Race
-    CIS 370-898
-    Christian Bodine
-    index.css
-*/
+ The Great Race
+ CIS 370-898
+ Christian Bodine
+ index.css
+ */
 
 body {
-  background-image: url("cartoon_road.png");
+    background-image: url("cartoon_road.png");
 }
 
 #blue_car {
-  position: absolute;
+    position: absolute;
 }
 
 #blueImg {
-  width: 485px;
+    width: 485px;
 }
 
 #greenImg {
@@ -26,7 +26,7 @@ body {
     max-width: 500px;
     max-height: 500px;
     left: 500px;
-    top: -550px;
+    top: -350px;
 }
 
 #greenWinsImg {
@@ -34,13 +34,13 @@ body {
     max-width: 500px;
     max-height: 500px;
     left: 500px;
-    top: -350px;    
+    top: -350px;
 }
 
 
 #green_car {
-  position: absolute;
-  bottom: 50px;
+    position: absolute;
+    //bottom: 30px;
 }
 
 #startButton, #startButtonTwo {
@@ -49,4 +49,3 @@ body {
     margin-right: auto;
     
 }
-
